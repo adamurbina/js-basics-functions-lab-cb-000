@@ -18,6 +18,8 @@ function distanceTravelledInFeet(start, end) {
   return distance;
 }
 
-function calculatesFarePrice(){
-
+function calculatesFarePrice(start, end){
+  let fare;
+  
+  return fare;
 }
