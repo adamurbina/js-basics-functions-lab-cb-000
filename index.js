@@ -22,7 +22,13 @@ function calculatesFarePrice(start, end){
   let fare;
   let distance;
   distance = distanceTravelledInFeet(start, end);
-  
-  
+  if (distance <= 400) {
+    fare = 0
+  } else if (distance >= 2500) {
+    fare = "cannot travel that far"
+  } else {
+    fare = (distance * .02) - (400 * .02)
+  }
+
   return fare;
 }
