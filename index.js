@@ -29,7 +29,7 @@ function calculatesFarePrice(start, end){
   } else if (distance > 2000) {
     fare = 25
   } else {
-    fare = Math.round((distance * .02) - (400 * .02))/100
+    fare = ((distance * .02) - (400 * .02)).toFixed(2)
   }
 
   return fare;
